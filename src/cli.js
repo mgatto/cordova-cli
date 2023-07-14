@@ -58,6 +58,7 @@ const knownOpts = {
     archs: String,
     device: Boolean,
     emulator: Boolean,
+    https: Boolean,
     target: String,
     noprepare: Boolean,
     nobuild: Boolean,

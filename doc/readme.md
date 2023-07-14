@@ -447,7 +447,7 @@ cordova run [<platform> [...]]
     [--list | --debug | --release]
     [--noprepare]
     [--nobuild]
-    [--device | --emulator | --target=<targetName>]
+    [--device | --emulator | --https | --target=<targetName>]
     [--buildConfig=<configfile>]
     [-- <platformOpts>]
 ```
@@ -462,6 +462,7 @@ cordova run [<platform> [...]]
 | --nobuild   | Skip building
 | --device    | Deploy to a device
 | --emulator  | Deploy to an emulator
+| --https     | Serve from Express over SSL. Store your SSL .key and .crt files to the project root. There are no default files for this.
 | --target    | Deploy to a specific target emulator/device. Use `--list` to display target options
 | --buildConfig=`<configFile>` | Default: build.json in cordova root directory. <br/> Use the specified build configuration file. `build.json` file is used to specify paramaters to customize the app build process especially related to signing the package.
 | `<platformOpts>` | To provide platform specific options, you must include them after `--` separator. Review platform guide docs for more details.
